@@ -1,0 +1,74 @@
+:root {
+  --bg: #d4d8dc;
+  --font-h1: #31353e;
+  --font-small: #4c4f57;
+  --img-bg: #fff;
+  --img-bg2: #f1f1f1;
+  --border: #f4a937;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  padding: 0;
+  background-color: var(--img-bg2);
+  font-family: "ubuntu";
+}
+
+.cal {
+  background-color: var(--bg);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10% 550px 10% 550px;
+  padding: 100px 0 100px 0;
+}
+
+.calhead h1 {
+  background-color: var(--bg);
+  border: none;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.calhead {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+}
+
+.soma {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.sub {
+  display: flex;
+  flex-direction: row;
+  gap: 7.5px;
+  margin-top: 10px;
+}
+
+.divi {
+  display: flex;
+  flex-direction: row;
+  gap: 7.5px;
+  margin-top: 10px;
+}
+
+.mult {
+  display: flex;
+  flex-direction: row;
+  gap: 7.5px;
+  margin-top: 10px;
+}
