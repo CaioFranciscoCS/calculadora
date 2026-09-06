@@ -1,10 +1,10 @@
 :root {
-  --bg: #d4d8dc;
-  --font-h1: #31353e;
+  --bg: #5300a0;
+  --font-h1: #fff;
   --font-small: #4c4f57;
   --img-bg: #fff;
-  --img-bg2: #f1f1f1;
-  --border: #f4a937;
+  --img-bg2: #31005f;
+  --border: #5300a059;
 }
 
 * {
@@ -15,7 +15,8 @@
 
 html,
 body {
-  width: 100vw;
+  /* width: 100vw; */
+  overflow: hidden;
   padding: 0;
   background-color: var(--img-bg2);
   font-family: "ubuntu";
@@ -23,17 +24,25 @@ body {
 
 .cal {
   background-color: var(--bg);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 6px 12px #5300a059; 
   border-radius: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10% 550px 10% 550px;
+  margin: 10% 40% ;
   padding: 100px 0 100px 0;
+}
+
+@media (max-width: 1032px) {
+  .cal {
+    margin: 10% 5% 10% 5%;
+    padding: 100px 0 100px 0;
+  }
 }
 
 .calhead h1 {
   background-color: var(--bg);
+  color: var(--font-h1);
   border: none;
   padding: 5px;
   display: flex;
@@ -43,7 +52,7 @@ body {
 }
 
 .calhead {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 6px 12px var(--border);
 }
 
 .soma {
